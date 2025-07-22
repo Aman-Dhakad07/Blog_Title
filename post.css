@@ -1,0 +1,80 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.blog{
+    text-decoration: underline;
+    margin-top:30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.subscribe{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+#wrapper{
+    width:1200px;
+    place-self: center;
+}
+.container{
+    height:1200px;
+    /* border:1px solid black; */
+    /* background-color: yellow; */
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(6,1fr);
+
+}
+
+#header{
+    grid-area:1/1/3/3  ;
+}
+#heading{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#Archives{
+     font-size: 700;
+    grid-row-start:2 ;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#subheading1{
+   grid-row-start: 4;
+   grid-row-end: 5;
+   grid-column-start:1 ;
+   grid-column-end: 3;
+}
+
+#subheading2{
+   grid-row-start: 5;
+   grid-row-end: 7;
+   grid-column-start:1 ;
+   grid-column-end: 3;
+}
+
+#About{
+    font-size: 700;
+    background-color: grey;
+}
+
+#Elsewhere{
+     font-size: 700;
+}
+
+.box{
+    /* border: 1px solid black; */
+    /* background-color: aqua; */
+    padding:20px;
+}
